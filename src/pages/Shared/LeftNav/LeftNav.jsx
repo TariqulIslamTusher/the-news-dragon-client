@@ -4,7 +4,7 @@ import css from '../../../index.css';
 
 const LeftNav = () => {
     const [category , setCategory] = useState([])
-    console.log(category);
+
     useEffect( () =>{
         fetch('http://localhost:3000/category')
             .then(res => res.json())

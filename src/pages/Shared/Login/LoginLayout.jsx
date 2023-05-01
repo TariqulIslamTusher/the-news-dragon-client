@@ -1,22 +1,21 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from '../pages/Shared/Footer/Footer';
-import HeaderTop from '../pages/Shared/Header/HeaderTop';
 import { Col, Container, Row } from 'react-bootstrap';
-import RightNav  from '../pages/Shared/Right Nav/RightNav';
+import HeaderTop from '../Header/HeaderTop';
+import Footer from '../Footer/Footer';
 
 
-const NewsLayout = () => {
 
+const LoginLayout = () => {
     return (
         <div>
             <HeaderTop></HeaderTop>
             <Container className="my-3">
                 <Row className='text-center'>
-                    <Col lg={9}>
+                    <Col lg={12}>
                         <Outlet></Outlet>
                     </Col>
-                    <Col lg={3}><RightNav></RightNav></Col>
+                    
                 </Row>
             </Container>
             <Footer></Footer>
@@ -24,4 +23,4 @@ const NewsLayout = () => {
     );
 };
 
-export default NewsLayout;
+export default LoginLayout;

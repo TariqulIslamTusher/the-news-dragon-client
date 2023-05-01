@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 const NewsCard = ({ data }) => {
     const { _id, category_id, title, image_url, author, details } = data
-    console.log(data);
     return (
         <div>
             <Card className='text-start my-3'>
